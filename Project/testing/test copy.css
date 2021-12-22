@@ -1,0 +1,88 @@
+
+
+  .menu-btn {
+    background-color: black;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    /* border: 3px solid #fff; */
+  }
+  .menu-btn__line {
+    width: 50px;
+    height: 6px;
+    background: #fff;
+    border-radius: 5px;
+    margin:5px;
+  }
+  #menu-btn__topline{
+    -webkit-animation-name: menu-btn__topline-animation1;
+    -moz-animation-name: menu-btn__topline-animation1;
+    -ms-animation-name:menu-btn__topline-animation1;
+    -o-animation-name:menu-btn__topline-animation1;
+    animation-name: menu-btn__topline-animation1;
+    -webkit-animation-duration:3s;
+    -moz-animation-duration: 3s;
+    -ms-animation-duration:3s;
+    -o-animation-duration:3s;
+    animation-duration:3s;
+    animation-play-state: paused;
+
+  }
+
+
+
+  
+
+@keyframes menu-btn__topline-animation1{
+  0%{
+    transform:translate(0);
+  }
+  60%{
+    transform:translate(0px,+15px);
+  }
+  100%{
+    transform:rotate(35deg);
+  }
+}
+@keyframes menu-btn__topline-animation2{
+  0%{
+    transform:translate(0px,+15px)
+  }
+  100%{
+    transform:translate(0);
+  }
+}
+
+@keyframes menu-btn__botline-animation1{
+  0%{
+    transform:translate(0);
+  }
+  60%{
+    transform:translate(0px,-15px);
+  }
+  100%{
+    transform:rotate(-35deg);
+  }
+}
+@keyframes menu-btn__botline-animation2{
+  0%{
+    transform:translate(0px,+15px)
+  }
+  100%{
+    transform:translate(0);
+  }
+}
+
+
+
+
+[data-animation]{
+  animation:
+  var(--anim,none);
+}
+
