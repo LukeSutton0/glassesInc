@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Amiri&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -19,87 +19,112 @@
         <!--Used to style whole page-->
         <nav id="navigation-bar">
             <div id="navigation-flex-container">
-            <!--Will be used on every page--> <!--Need this clickable-->
-                <img src="/Code/Assets/logo.PNG" id="logo-glasses"  
-                    alt="An image of glasses that can be clicked to return to the first page">
+                <!--Will be used on every page-->
+                <!--Need this clickable-->
+                <a href="index.html"><img src="Assets/logo.PNG" id="logo-glasses"
+                    alt="An image of glasses that can be clicked to return to the first page"></a>
                 <div class="menu-btn">
-                    <div class="menu-btn__line"></div>  <!--check naming convention-->
+                    <div class="menu-btn__line"></div>
+                    <!--check naming convention-->
                 </div>
             </div>
-            <div class="menuChoices"> <!--maybe change this to list-->
-                <p class="menuChoice"><a href="index.html">Home</a></p>
-                <p class="menuChoice"><a href="">Link1</a></p>
-                <p class="menuChoice"><a href="">Link2</a></p>
-                <p class="menuChoice"><a href="">Link3</a></p>
-                <p class="menuChoice"><a href="">Account Settings</a></p>
-                <p class="menuChoice"><a href="">Support</a></p>
-            </div>
+            <ul class="menuChoices">
+                <!--maybe change this to list-->
+                <li>
+                    <p class="menuChoice"><a href="index.html">Home</a></p>
+                </li>
+                <li>
+                    <p class="menuChoice"><a href="">Link1</a></p>
+                </li>
+                <li>
+                    <p class="menuChoice"><a href="">Link2</a></p>
+                </li>
+                <li>
+                    <p class="menuChoice"><a href="">Link3</a></p>
+                </li>
+                <li>
+                    <p class="menuChoice"><a href="">Account Settings</a></p>
+                </li>
+                <li>
+                    <p class="menuChoice"><a href="">Support</a></p>
+                </li>
+            </ul>
         </nav>
 
         <article id="content">
             <!--Main content in this part-->
-
-            <section id="index-animated-hero">
-                <div id="hero">
-                    <img src="/Code/Assets/womenWithGlasses.jpg" id="women"alt="A women with glasses smiling">
+            <section id="index-brunette-hero" alt="A picture of a women with glasses">
+                <div class="index-brunette-hero-text" >
+                    <h1 id="index-hero-text-find"><i>Find what you <br> Love</i></h1>
+                    <h1 id="index-hero-text-glasses"><i>Bespoke<br> Glasses <br> for You.</i></h1>
                 </div>
             </section>
             <section class="parrallelDivContainer">
-                <div>
-
+                <div class="parralel-text-left">
+                    <h2>THE ALL NEW ELEGANT BRAND STYLE, UNMATCHED MODERNITY, 
+                        REFINED FOR YOUR ENJOYMENT </h2>
                 </div>
-                <div>
+                <img src="Assets/giorgio-trovato-.jpg" class="parrallel-img-right" alt="An image of some sunglasses" copyright="https://unsplash.com/photos/K62u25Jk6vo">
 
-                </div>
             </section>
             <section class="parrallelDivContainer">
-                <div>
+                <img src="Assets/sincerely-media.jpg"class="parrallel-img-left" alt="An image of glasses resting ona book">
 
-                </div>
-                <div>
-
+                
+                <div class="parralel-text-right">
+                    <h2>DESIGNED FOR YOU, BY YOU, FOR AN ALL NEW STUNNING LOOK </h2>
                 </div>
             </section>
-            <section>
+            <section class="index-carousel">
                 <!--This part for carousel of images-->
-                <div class="slider">
-                    <div class="slides">
-                        <input type="radio" name="radio-btn" id="radio1"> <!--add accessibility-->
-                        <input type="radio" name="radio-btn" id="radio2">
-                        <input type="radio" name="radio-btn" id="radio3">
-                        <input type="radio" name="radio-btn" id="radio4">
-                        <input type="radio" name="radio-btn" id="radio5">
+                    <div class="index-carousel-flex-container"> 
+                        <img src="Assets/arrow-left-solid.svg" class="index-carousel-arrow">
+                        
+                        <div class="index-carousel-img-container index-carousel-first-img">
+                            <img src="Assets/susan-duran.jpg" alt="women with glasses smiling">
 
+                        </div>
+                        <div class="index-carousel-img-container">
+                            <img src="Assets/womenWithGlasses.jpg" alt="women with glasses on a dark street ">
+
+                        </div>
+                        <div class="index-carousel-img-container">
+                            <img src="Assets/adolfo-felix-.jpg" alt="women holding glasses up to camera">
+
+                        </div>
+                        <div class="index-carousel-img-container">
+                            <img src="Assets/andriyko-podilnyk.jpg" alt="child wearing glasses hanging off face">
+
+                        </div>
+                        <div class="index-carousel-img-container">
+                            <img src="Assets/laurenz-kleinheider.jpg" alt="man looking out window into own reflection">
+                        </div>
+                        <img src="Assets/arrow-right-solid.svg" class="index-carousel-arrow">
                     </div>
-                    <div class="slide">
-                        <img src="" alt="">
-
-                    </div>
-                    <div class="slide">
-                        <img src="" alt="">
-
-                    </div>
-                    <div class="slide">
-                        <img src="" alt="">
-
-                    </div>
-                    <div class="slide">
-                        <img src="" alt="">
-
-                    </div>
-                    <div class="slide">
-                        <img src="" alt="">
-
+                    <div class="index-carousel-menu-buttons">
+                        <input type="radio" name="radio-btn" id="index-carousel-button-1" class="current-selected">
+                        <!--add accessibility-->
+                        <label for="index-carousel-button-1" ></label>
+                        <input type="radio" name="radio-btn" id="index-carousel-button-2">
+                        <label for="index-carousel-button-2" ></label>
+                        <input type="radio" name="radio-btn" id="index-carousel-button-3">
+                        <label for="index-carousel-button-3" ></label>
+                        <input type="radio" name="radio-btn" id="index-carousel-button-4">
+                        <label for="index-carousel-button-4" ></label>
+                        <input type="radio" name="radio-btn" id="index-carousel-button-5">
+                        <label for="index-carousel-button-5" ></label>
                     </div>
 
-                </div>
+
+
+
             </section>
 
 
 
         </article>
         <footer>
-            <p>foot</p>
+            <p>footer here</p>
         </footer>
     </div>
     <script src="main.js"></script>

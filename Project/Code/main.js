@@ -12,7 +12,6 @@ function mobileMenuOpen(){
     setTimeout(() => {mobileMenuBtn.classList.toggle('anim2'); },500 );
     menuChoices.classList.toggle('mobileDropdown')
     menuOpen = true;
-    
   } else {
     mobileMenuBtn.classList.toggle('anim2');
     setTimeout(() => {mobileMenuBtn.classList.toggle('anim1'); },500 );
